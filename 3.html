@@ -35,7 +35,7 @@
 <script type="text/javascript">
     //->HTML5/JS/CSS3只能检测横竖屏,不能禁止横竖屏
     var supportsOrientationChange = "onorientationchange" in window,
-            orientationEvent = supportsOrientationChange ? "orientationchange" : "resize";
+            orientationEvent = supportsOrientationChange ? "resize" : "orientationchange";
     window.addEventListener(orientationEvent, function () {
         if (supportsOrientationChange) {
             if (Math.abs(window.orientation) === 90) {
